@@ -1,17 +1,19 @@
 {
   "name": "example-vue-electron",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "electron:build": "vue-cli-service electron:build --mac --win",
+    "electron:build": "vue-cli-service electron:build --mac --win --publish always",
     "electron:serve": "vue-cli-service electron:serve",
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "electron-log": "^2.2.17",
     "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.0.6",
     "vue": "^2.5.21"
   },
   "devDependencies": {

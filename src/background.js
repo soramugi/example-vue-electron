@@ -5,9 +5,12 @@ import {
   createProtocol,
   installVueDevtools
 } from 'vue-cli-plugin-electron-builder/lib'
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 if(require('electron-squirrel-startup')) app.quit();
+
+import './auto-update';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -15,6 +18,7 @@ let win
 
 // Standard scheme must be registered before the app is ready
 protocol.registerStandardSchemes(['app'], { secure: true })
+
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({ width: 800, height: 600 })
