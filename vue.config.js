@@ -9,11 +9,14 @@ module.exports = {
         win: {
           icon: 'build/icon.png',
         },
+        // publish: {
+        //   provider: 's3',
+        //   bucket: 'example-vue-electron',
+        //   region: 'ap-northeast-1',
+        // },
         publish: {
-          provider: 's3',
-          bucket: 'example-vue-electron',
-          region: 'ap-northeast-1',
-        },
+          provider: 'github'
+        }
       }
     }
   }
