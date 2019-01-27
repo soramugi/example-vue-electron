@@ -15,7 +15,7 @@ cache:
     - $HOME/.cache/electron-builder
 
 script:
-  - npm run electron:build
+  - npm run electron:build:release
 
 branches:
   except:
