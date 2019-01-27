@@ -4,7 +4,7 @@ module.exports = {
       builderOptions: {
         mac: {
           icon: 'build/icon.png',
-          target: 'zip',
+          target: [ 'zip', 'dmg' ],
         },
         win: {
           icon: 'build/icon.png',
